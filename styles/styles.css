@@ -15,9 +15,6 @@ html {
     --purple: #7413DC;
     --purple-darker: #490499;
 }
-.white-svg {
-    filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(312deg) brightness(106%) contrast(101%);
-}
 body {
     color: var(--text);
     font-family: 'Nunito Sans', sans-serif;
