@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800;900&display=swap');
+/*Font Weight guide
+Light = 300
+Regular = 400
+Bold = 700
+ExtraBold = 800
+Black = 900
+*/
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --bg: white;
+    --text: black;
+    --purple: #7413DC;
+    --purple-darker: #490499;
+}
+.white-svg {
+    filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(312deg) brightness(106%) contrast(101%);
+}
+body {
+    color: var(--text);
+    font-family: 'Nunito Sans', sans-serif;
+}
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--purple-darker);
+    color: white;
+}
+.header-flex > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
