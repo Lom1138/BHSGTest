@@ -15,6 +15,7 @@ html {
     --purple: #7413DC;
     --purple-darker: #490499;
 }
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #202020;
@@ -23,6 +24,7 @@ html {
     --purple-darker: #490499;
   }
 }
+*/
 body {
   color: var(--text);
   font-family: 'Nunito Sans', sans-serif;
@@ -116,7 +118,7 @@ footer {
   font-weight: bold;
 }
 .footer-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
