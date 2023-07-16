@@ -7,7 +7,7 @@ ExtraBold = 800
 Black = 900
 */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 :root {
     --bg: white;
@@ -15,25 +15,47 @@ html {
     --purple: #7413DC;
     --purple-darker: #490499;
 }
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #202020;
+    --text: white;
+    --purple: #7413DC;
+    --purple-darker: #490499;
+  }
+}
+*/
 body {
-    color: var(--text);
-    font-family: 'Nunito Sans', sans-serif;
+  color: var(--text);
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--bg);
 }
-.header-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--purple-darker);
-    color: white;
+a {
+  color: var(--text);
+  text-decoration: none;
 }
-.header-flex > div {
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
+.aAlt {
+  color: white;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--purple-darker);
+  color: white;
+}
+header > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+header > div > h3 {
+  cursor: pointer;
 }
 .hover-underline-animation {
   display: inline-block;
@@ -55,4 +77,48 @@ body {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--purple-darker);
+  color: white;
+}
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  margin: 10px;
+  padding: 20px;
+  margin-top: 0;
+  font-size: 20px;
+}
+.footer-row-image {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.footer-heading {
+  font-weight: bold;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
