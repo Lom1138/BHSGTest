@@ -5,7 +5,7 @@
 	 <!-- icon.svg -->
 <style>
   path {
-    fill: black;
+    fill: #7413DC;
   }
   @media (prefers-color-scheme: dark) {
     path {
