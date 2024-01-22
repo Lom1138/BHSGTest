@@ -63,7 +63,7 @@ button:hover{
     text-decoration: none;
     color: var(--textD);
 }
-@media (max-width: 35em) {
+@media (max-width: 51em) {
     .primary-header {
         padding-inline: 0rem;
     }
