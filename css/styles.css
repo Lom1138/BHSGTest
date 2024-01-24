@@ -45,6 +45,15 @@ body {
 button:hover{
     cursor: pointer;
 }
+.material-symbols-outlined {
+    display: inline;
+    vertical-align: middle;
+    margin-inline: 5px;
+}
+.fontawesome {
+    display: inline;
+    margin-inline: 5px;
+}
 /* Navigation bar */
 .logo {
     width: 200px;
@@ -140,12 +149,6 @@ footer {
 .footer-bottom-text a {
     text-decoration: none;
     color: var(--textD);
-}
-.material-symbols-outlined {
-    font-size: 1em;
-    display: inline;
-    vertical-align: middle;
-    margin-left: 5px;
 }
 @media (min-width: 768px) {
     .mobile-content {
