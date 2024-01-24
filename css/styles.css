@@ -27,6 +27,7 @@ Black = 900
 /* General */
 html, body {
     height: 100%;
+    margin: 0;
 }
 body {
     color: var(--text);
@@ -120,6 +121,35 @@ button:hover{
         background: url("../assets/icons/close-icon-gicons.svg");
         position: fixed;
     }
+}
+/* Banner Image */
+.banner-main {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../assets/images/banner-2024.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -10;
+}
+.banner-content-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-inline: 2vw;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+}
+.banner-content-container h1 {
+    font-size: 3rem;
+}
+.banner-content-container p {
+    font-size: 1.5rem;
 }
 /* Footer */
 footer {
