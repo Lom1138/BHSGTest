@@ -118,6 +118,7 @@ button:hover{
     }
     .mobile-nav-toggle[data-visible="true"] {
         background: url("../assets/icons/close-icon-gicons.svg");
+        position: fixed;
     }
 }
 /* Footer */
@@ -146,6 +147,13 @@ footer {
     text-decoration: none;
     padding: 0;
     margin-bottom: 20px;
+}
+.footer-seperator {
+   border: none;
+   height: 1px;
+   background-color: white;
+   margin: 20px 0px;
+   opacity: 50%; 
 }
 .footer-bottom-text a {
     text-decoration: none;
