@@ -135,6 +135,7 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-section {
     flex: 1;
@@ -158,5 +159,11 @@ footer {
 @media (max-width: 767px) {
     .desktop-content {
       display: none; /* Hide desktop content on smaller screens */
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-section {
+        margin-bottom: 20px;
     }
 }
