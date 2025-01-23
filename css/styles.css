@@ -124,7 +124,6 @@ button:hover{
 }
 /* Banner Image */
 .banner-main {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../assets/images/banner-2024.jpg");
     height: 100%;
     width: 100%;
     background-position: center;
